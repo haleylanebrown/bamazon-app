@@ -34,7 +34,7 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
     ![Customer View Screen Shot](/images/screenshot1.png)
     
-2. Here is a quick video of the working app:
+2. Here is a quick gif of the working app:
 
     ![Customer View Video](/images/bamazonCustomer.gif)
 
