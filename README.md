@@ -15,6 +15,7 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
     * The first asks them the ID of the product they would like to buy.
     * The second message asks how many units of the product they would like to buy.
+    * For both messages, if the user does not enter a number, the app prompts them to enter a whole number instead.
 
 3. Once the customer has placed the order, the app checks if the store has enough of the product to meet the customer's request.
 
@@ -53,19 +54,32 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
 * Add New Product
 
-* If a manager selects `View Products for Sale`, the app lists every available item: the item IDs, names, prices, and quantities.
+* Exit
+
+* If a manager selects `View Products for Sale`, the app lists every available item: the item IDs, names, prices, product sales, and quantities.
+
+![Manager View Products for Sale](/images/screenshot2.png)
 
 * If a manager selects `View Low Inventory`, then it lists all items with an inventory count lower than five.
 
-* If a manager selects `Add to Inventory`, app displays a prompt that will let the manager "add more" of any item currently in the store.
+![Manager View Low Inventory](/images/screenshot3.png)
 
-* If a manager selects `Add New Product`, app allows the manager to add a completely new product to the store.
+* If a manager selects `Add to Inventory`, the app displays a prompt that will let the manager "add more" of any item currently in the store. If the user does not enter a number (for either the item ID or quantity added), the app prompts them to enter a whole number.
+
+![Manager View Add Inventory](/images/screenshot4.png)
+
+* If a manager selects `Add New Product`, the app allows the manager to add a completely new product to the store. When asked for the new product's department, the manager is provided with a drop-down list that is populated from the "departments" table in Sequel Pro. This way, the manager cannot create departments that don't already exist (only the supervisor is allowed to do this).
+
+![Manager View Add Product 1](/images/screenshot5.png)
+![Manager View Add Product 2](/images/screenshot6.png)
+
+* If a manager selects `Exit`, the connection is ended.
 
 #### Screenshots & Video of Working App for Manager View
 
 1. Here is a quick video of the working app:
 
-![Customer View Video](/assets/images/ManagerViewVideo01.gif)
+![Manager View Video](/images/bamazonManager.gif)
 
 
 

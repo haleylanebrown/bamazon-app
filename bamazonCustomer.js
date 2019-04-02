@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+require("console.table")
 
 var connection = mysql.createConnection({
     host: "localhost",
@@ -77,7 +78,7 @@ function start() {
               function(err) {
                 var totalCost = chosenItem.price * parseInt(answer.quantity)
                 if (err) throw err;
-                console.log(`\nYour purchase went through! The total cost was: ${totalCost}\n`);
+                console.log(`\nYour purchase went through! The total cost was: $${totalCost}\n`);
                 inquirer.prompt([
                     {
                         name: "again",

@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var departments =[]
 
 
 var connection = mysql.createConnection({
@@ -105,7 +106,18 @@ function addToInventory() {
 })
 }
 
+function getDepartment() {
+connection.query(
+  "SELECT department_name from departments", function(err, res) {
+    for (var i=0; i<res.length; i++) {
+      departments.push(res[i].department_name)
+    }
+  }
+)
+}
+
 function addProduct() {
+  getDepartment()
     inquirer.prompt([
         {
             name: "name",
@@ -114,8 +126,9 @@ function addProduct() {
         },
         {
             name: "department",
-            type: "input",
+            type: "list",
             message: "What is the name of the department the product falls under?",
+            choices: departments,
         },
         {
             name: "price",
@@ -165,7 +178,7 @@ function addProduct() {
         name: "options",
         type: "list",
         message: "\nWhat action would you like to take?",
-        choices: ["View Products for Sale", "View Low Inventory", "Add to Inventory", "Add New Product"]
+        choices: ["View Products for Sale", "View Low Inventory", "Add to Inventory", "Add New Product", "Exit"]
       })
       .then(function(answer) {
         if (answer.options === "View Products for Sale") {
@@ -176,7 +189,7 @@ function addProduct() {
           addToInventory()
         } else if(answer.options=== "Add New Product") {
           addProduct()
-        } else {
+        } else if(answer.options=== "Exit") {
           connection.end();
         }
       });
