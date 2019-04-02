@@ -42,9 +42,7 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
 ### Manager View
 
-1. From your Terminal, run the Node application called `bamazonManager.js`. Running this application will:
-
-* List a set of menu options:
+1. From your Terminal, run the Node application called `bamazonManager.js`. Running this application will list a set of menu options:
 
 * View Products for Sale
 
@@ -56,24 +54,24 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
 * Exit
 
-* If a manager selects `View Products for Sale`, the app lists every available item: the item IDs, names, prices, product sales, and quantities.
+If a manager selects `View Products for Sale`, the app lists every available item: the item IDs, names, prices, product sales, and quantities.
 
 ![Manager View Products for Sale](/images/screenshot2.png)
 
-* If a manager selects `View Low Inventory`, then it lists all items with an inventory count lower than five.
+If a manager selects `View Low Inventory`, then it lists all items with an inventory count lower than five.
 
 ![Manager View Low Inventory](/images/screenshot3.png)
 
-* If a manager selects `Add to Inventory`, the app displays a prompt that will let the manager "add more" of any item currently in the store. If the user does not enter a number (for either the item ID or quantity added), the app prompts them to enter a whole number.
+If a manager selects `Add to Inventory`, the app displays a prompt that will let the manager "add more" of any item currently in the store. If the user does not enter a number (for either the item ID or quantity added), the app prompts them to enter a whole number.
 
 ![Manager View Add Inventory](/images/screenshot4.png)
 
-* If a manager selects `Add New Product`, the app allows the manager to add a completely new product to the store. When asked for the new product's department, the manager is provided with a drop-down list that is populated from the "departments" table in Sequel Pro. This way, the manager cannot create departments that don't already exist (only the supervisor is allowed to do this).
+If a manager selects `Add New Product`, the app allows the manager to add a completely new product to the store. When asked for the new product's department, the manager is provided with a drop-down list that is populated from the "departments" table in Sequel Pro. This way, the manager cannot create departments that don't already exist (only the supervisor is allowed to do this).
 
 ![Manager View Add Product 1](/images/screenshot5.png)
 ![Manager View Add Product 2](/images/screenshot6.png)
 
-* If a manager selects `Exit`, the connection is ended.
+If a manager selects `Exit`, the connection is ended.
 
 #### Gif of Working App for Manager View
 
@@ -83,9 +81,7 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
 ### Supervisor View
 
-1. From your Terminal, run the Node application called `bamazonSupervisor.js`. Running this application will:
-
-* List a set of menu options:
+1. From your Terminal, run the Node application called `bamazonSupervisor.js`. Running this application will list a set of menu options:
 
 * View Product Sales by Department
 
@@ -93,9 +89,9 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
 * Exit
 
-* If a manager selects `View Product Sales by Department`, the app lists details for each department: department_id, department_name, over_head_costs, product_sales, total_profit
+If a manager selects `View Product Sales by Department`, the app lists details for each department: department_id, department_name, over_head_costs, product_sales, total_profit
 
-* If a manager selects `Create New Department`, the app allows the supervisor to add a new department to the store.
+If a manager selects `Create New Department`, the app allows the supervisor to add a new department to the store.
 
 #### Screenshots and Gif of Working App for Supervisor View
 
