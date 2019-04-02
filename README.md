@@ -75,16 +75,40 @@ Bamazon is an Amazon-like storefront using MySQL and Node.js. The app takes in o
 
 * If a manager selects `Exit`, the connection is ended.
 
-#### Screenshots & Video of Working App for Manager View
+#### Gif of Working App for Manager View
 
-1. Here is a quick video of the working app:
+1. Here is a quick gif of the working app:
 
-![Manager View Video](/images/bamazonManager.gif)
+![Manager View Gif](/images/bamazonManager.gif)
 
+### Supervisor View
 
+1. From your Terminal, run the Node application called `bamazonSupervisor.js`. Running this application will:
 
-### Additional Screenshots of the initial Database Creation
+* List a set of menu options:
+
+* View Product Sales by Department
+
+* Create New Department
+
+* Exit
+
+* If a manager selects `View Product Sales by Department`, the app lists details for each department: department_id, department_name, over_head_costs, product_sales, total_profit
+
+* If a manager selects `Create New Department`, the app allows the supervisor to add a new department to the store.
+
+#### Screenshots and Gif of Working App for Supervisor View
+
+1. Here is a screenshot of the working app:
+
+![Supervisor View Product Sales by Department and Create New Department Screenshot](/images/screenshot7.png)
+
+2. Here is a quick gif of the working app:
+
+![Supervisor View Product Sales by Department and Create New Department Gif](/images/bamazonSupervisor.gif)
+
+### Initial Database Creation
 
 1. Here is a screenshot of MySQLWorkbench and the process for initially creating the database:
 
-![Customer View Screen Shot](/assets/images/DatabaseCreationScreenShot01.jpg)
+![MySQLWorkbench Screen Shot](/images/mysql.png)

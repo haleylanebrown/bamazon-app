@@ -21,14 +21,14 @@ connection.connect(function(err) {
         name: "options",
         type: "list",
         message: "\nWhat action would you like to take?",
-        choices: ["View Product Sales by Department", "Create New Department"]
+        choices: ["View Product Sales by Department", "Create New Department", "Exit"]
       })
       .then(function(answer) {
         if (answer.options === "View Product Sales by Department") {
           productSales()
         } else if(answer.options === "Create New Department") {
           newDepartment()
-        } else {
+        } else if(answer.options === "Exit") {
           connection.end();
         }
       });
