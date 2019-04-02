@@ -93,6 +93,8 @@ If a manager selects `View Product Sales by Department`, the app lists details f
 
 If a manager selects `Create New Department`, the app allows the supervisor to add a new department to the store.
 
+If a manager selects `Exit`, the connection is ended.
+
 #### Screenshots and Gif of Working App for Supervisor View
 
 1. Here is a screenshot of the working app:
