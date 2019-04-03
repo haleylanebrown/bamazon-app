@@ -107,6 +107,6 @@ If a manager selects `Exit`, the connection is ended.
 
 ### Initial Database Creation
 
-1. Here is a screenshot of MySQLWorkbench and the process for initially creating the database:
+1. Here is a screenshot of my Sequel Pro and the process for initially creating the database:
 
-![MySQLWorkbench Screen Shot](/images/mysql.png)
+![Sequel Pro Screen Shot](/images/mysql.png)
